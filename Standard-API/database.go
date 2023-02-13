@@ -9,7 +9,7 @@ type Player struct {
 	Created time.Time `json:"created"`
 }
 
-type playerServer struct {
+type PlayerServer struct {
 	store *playerstore.PlayerStore
 }
 

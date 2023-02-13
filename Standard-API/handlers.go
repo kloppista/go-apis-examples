@@ -38,6 +38,7 @@ func (ps *PlayerServer) playerHandler(w http.ResponseWriter, r *http.Request) {
 		ps.getPlayerHandler(w, r, id)
 	} else {
 		w.WriteHeader(http.StatusMethodNotAllowed)
+		return
 	}
 }
 
